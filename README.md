@@ -1,2 +1,14 @@
-# news2slack
-fetch and translate the news titles, then send them to slack
+# 概要
+ニュースサイトからトップニュースのタイトルとURLを取得し、タイトルを翻訳した上でSlackに投稿するプログラム。
+近年の国際情勢を踏まえて、ロシアとウクライナにおいて各国主要メディアがどのような報道をしているかを知るために作成しました。
+
+# 使い方
+ニュース取得先ウェブサイト
+・`rt.go`を実行すると「Russia Today」（ロシアメディア）からニュースを取得することができます。
+・`tsn.go`を実行すると「TSN」（ウクライナメディア）からニュースを取得することができます。
+
+使用の手順
+1. Slackのアプリ設定
+2. 投稿先のSlackワークスペースAPIとチャネルリンクを取得し、`rt.go`および`tsn.go`の`sendtoSlack`関数内該当箇所に貼り付け（APIやリンクの取得方法は[こちら](https://api.slack.com/apps)）
+3. Google Cloud Translateの設定（設定方法は[こちら](https://cloud.google.com/translate/docs/setup?hl=ja)）
+4. 翻訳先言語の設定（デフォルトでは英語）

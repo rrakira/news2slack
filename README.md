@@ -7,7 +7,8 @@
 1. Slackのアプリ設定
 2. 投稿先のSlackワークスペースAPIとチャネルリンクを取得し、`rt.go`および`tsn.go`の`sendtoSlack`関数内該当箇所に貼り付け（APIやリンクの取得方法は[こちら](https://api.slack.com/apps)）
 3. Google Cloud Translateの設定（設定方法は[こちら](https://cloud.google.com/translate/docs/setup?hl=ja)）
-4. 翻訳先言語の設定（デフォルトでは英語）
+4. 翻訳先言語を指定（デフォルトでは英語）
+5. 取得する記事の数を指定（デフォルトでは5）
 
 ニュース取得先ウェブサイト
 - `rt.go`を実行すると「Russia Today」（ロシアメディア）からニュースを取得することができます。

@@ -13,3 +13,5 @@
 ニュース取得先ウェブサイト
 - `rt.go`を実行すると「Russia Today」（ロシアメディア）からニュースを取得することができます。
 - `tsn.go`を実行すると「TSN」（ウクライナメディア）からニュースを取得することができます。
+
+![scraping](https://user-images.githubusercontent.com/103403806/167711625-04d00114-097b-4a26-85d1-cfd24103ffd4.gif)
